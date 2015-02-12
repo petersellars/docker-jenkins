@@ -10,7 +10,7 @@ build:
         name: docker build
         code: |
           # Build the actual container with the Dockerfile (included in the repo)
-          sudo docker build -t petersellars/jenkins .
+          sudo docker build -t cato1971/docker-jenkins .
     - script:
         name: list images
         code: |
