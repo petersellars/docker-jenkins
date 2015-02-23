@@ -1,0 +1,6 @@
+custom:
+  image: cato1971/docker-jenkins
+  ports:
+    - "8080:8080"
+  volumes_from:
+    - jenkins-dv

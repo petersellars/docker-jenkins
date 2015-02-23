@@ -1,2 +1,4 @@
 dockerhub:1.0
 disk-usage:0.25
+metrics:3.0.9
+support-core:2.20
