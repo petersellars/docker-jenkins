@@ -1,8 +1,12 @@
 # Jenkins Docker Image
 
+Personal [Jenkins](http://jenkins-ci.org) Docker Image
+
+## Wercker Build Status
 [![wercker status](https://app.wercker.com/status/871cb9e9823a3fdd3b7afc504ee4c16b/m "wercker status")](https://app.wercker.com/project/bykey/871cb9e9823a3fdd3b7afc504ee4c16b)
 
-Personal [Jenkins](http://jenkins-ci.org) Docker Image
+## Circle CI Build Status
+[![Circle CI](https://circleci.com/gh/petersellars/docker-jenkins.svg?style=svg)](https://circleci.com/gh/petersellars/docker-jenkins)
 
 ## Plugins
 
