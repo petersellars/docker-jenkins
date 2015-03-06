@@ -1,6 +1,9 @@
 box: wercker-labs/docker
 build:
   steps:
+    - rvm-use:
+        version: ruby-1.9.4-p484
+    - bundle install
     - script:
         name: docker version
         code: |
@@ -16,3 +19,6 @@ build:
         code: |
           # List docker images, it should list the jenkins image
           sudo docker images
+    - script:
+        name: rspec
+        code: bundle exec rspec specs.rb
