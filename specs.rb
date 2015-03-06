@@ -8,4 +8,13 @@ describe "Jenkins image" do
   it "should be available" do
     expect(@image).to_not be_nil
   end
+
+  it "should expose the default tcp port" do
+    expect(@image.json["Config"]["ExposedPorts"]).to include("8080/tcp")
+  end
+
+  it "should expose a Jenkins Home volume" do
+    expect(@image.json["Config"]["Volumes"]).to include("/var/jenkins_home")
+  end
+
 end
