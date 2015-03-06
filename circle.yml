@@ -10,3 +10,7 @@ dependencies:
   post:
     - docker info
     - docker build -t cato1971/docker-jenkins .
+
+test:
+  override:
+    - bundle exec rake specs.rb
